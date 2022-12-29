@@ -64,3 +64,34 @@ main {
 .roll-dice:active {
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
+
+.score-board {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+hr {
+  width: 100%;
+}
+
+.current-score,
+.new-high-score,
+.high-score {
+  padding: 0.625em 0.625em;
+  border-radius: 0.5em;
+  font-size: 1rem;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold ;
+}
+
+.high-score::selection,
+.new-high-score::selection,
+.current-score::selection,
+.die-num::selection {
+  text-emphasis: none;
+}
