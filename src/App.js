@@ -13,6 +13,7 @@ function App() {
     const [tenzies, setTenzies] = React.useState(false)
     const [highScore, setHighScore] = React.useState(0)
     const [isActive, setIsActive] = React.useState(true)
+    // eslint-disable-next-line
     const [isPaused, setIsPaused] = React.useState(false)
     const [newHighScore, setNewHighScore] = React.useState(false)
 
@@ -32,6 +33,7 @@ function App() {
             setIsActive(false)
             handleHighscore()
         }
+        // eslint-disable-next-line
     }, [dice])
     
     React.useEffect(() => {
